@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+   background-color: #fff;
+   background-size: 1100px;
+   background-position-x: -115px; 
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+textarea{
+    padding: 10px;
+    height: 20vh;
+    width: 60vw;
+    resize: none;
+    border: 2px solid rgba(0, 0, 0, 0.445);
+    border-radius: 20px;
+    outline:none;
+    color:teal;
+    font-size: 1.5rem;
+    overflow: hidden;
+    background-color: #d6c2a8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 7px;
+}
+
+button{
+    width: 10rem;
+    height: 2.5rem;
+    background-color:#313131;
+    border: 1px solid #383737;
+    color: white;
+    border-radius: 10px;
+    transition: .3s linear;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+textarea , button{
+    margin: 10px;
+}
+
+.content{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+}
+
+.content > h1{
+    margin-bottom: 20px;
+    color:teal;
+}
+.content > p{
+    font-size: 1.2rem;
+    color: tomato;
+    font-weight: 600;
+}
+
+.content button{
+    margin: auto;
+}
+
+.ferb{
+    height: 10vw;
+    width: 10vw;
+}
+
+.img_div{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:300px) and (max-width:700px){
+    .content , textarea{
+        width: 90%;
+        height: 40%;
+    }
+    textarea,button{
+        margin: 20px;
+    }
+    .content{
+        margin-bottom: 250px;
+    }
+    textarea{
+        font-size: 1.4rem;
+    }
+       
+}
